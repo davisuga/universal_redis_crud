@@ -1,0 +1,6 @@
+record user {
+    name: string,
+    email: string,
+}
+type create-error = string
+create-user: func(u: user) -> expected<user, create-error>

@@ -1,0 +1,14 @@
+[package]
+name = "universal-redis-crud"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+redis = { version = "0.22.3", features = ["tokio-comp"] }
+tokio = "1.26.0"
+wai-bindgen-rust = "0.2.3"
